@@ -1,0 +1,332 @@
+body {
+    margin: 0px;
+  }
+
+  .fa-instagram, .fab {
+      size: 300px;
+  }
+  .oren {
+      color: orangered;
+  }
+  /* Navbar */
+  header {
+  background-color: rgb(16, 111, 165);
+  width: 100%;
+  height: 50px;
+  }
+  
+  ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 17px;
+  justify-content: flex-end; 
+  margin: 0px; 
+  }
+  
+  
+  li {
+  margin: 17px 5px;
+  font-family: Arial;
+  }
+  
+  .brand {
+  margin-right: auto;
+  }
+  
+  
+  li a {
+      padding: 16px;
+      color: black;
+    text-decoration: none; 
+  }
+  
+  li a:hover {
+    background-color: gray;
+  }
+  
+  @media (max-width: 450px) {
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    background-color: rgb(16, 111, 165);
+  }
+  
+  }
+  /* akhir navbar */
+  main {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+
+
+/* Contact */
+
+  .contact {
+    text-align: center;
+    margin-top: 10vh;
+    background: whitesmoke;
+    padding: 20px 0 100px;
+  }
+
+  .cad {
+      width: 100%;
+      text-align: center;
+  }
+
+  .cad-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+  }
+
+    .contact .cad-fig img{
+      height: 50px;
+      width: 50px;
+  }
+
+/* Akhir contact */
+  hr {
+    width: 250px;
+	border-top: 3px solid #999;
+  }
+
+  /* About */
+  .about {
+    text-align: center;
+    margin-top: 10vh;
+    background-color: whitesmoke;
+    padding: 20px 20px 100px;
+  }
+  .about article {
+      position: relative;
+      top: 50%;
+      text-align: center;
+      transform: translate(0, -50%);
+      padding: 1rem;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .box {
+      /* background-color: green; */
+      border-radius: 5px;
+      min-height: 200px;
+  }
+
+  .left-box {
+      grid-column: 1;
+      grid-row: 1;
+      width: 80%;
+      background-color: rgba(79, 109, 126, 0.301);
+      margin: 30px 0 0 17%;
+      
+  }
+
+  .right-box {
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%;
+    background-color: rgba(16, 110, 165, 0.226);
+    margin: 30px 0 0 0 ;
+}
+
+.grid p {
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid hr {
+    width: 35vw;
+	border-top: 3px solid rgb(17, 28, 63);
+}
+
+.grid ul {
+    display: inline-block;
+    list-style-type: square;
+    text-align: left;
+    margin-top: 50x;
+}
+
+/* akhir About */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header + Slider */
+
+.banner figure {
+    top: 20vh;
+    left: 40vw;
+    z-index: 3;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.pbanner {
+    max-height: 500px;
+    max-width: 1284;
+  }
+
+  .banner {
+    background-image: url("./images/bg4.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  
+  .shadow {
+    background: black;
+    opacity: 0.8;
+    height: 500px;
+  }
+
+.pbanner img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: red;
+    opacity: 0.4;
+}
+
+.pbanner img:hover {
+    opacity: 1;
+}
+
+
+
+/* [SLIDER] */
+#slider,  #slider .slide{
+  width: 1284px;
+  height: 500px;
+}
+#slider {
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background: black;
+  color :lemonchiffon;
+  opacity: 0.7;
+}
+#slider .container {
+  position: relative;
+  width: 9000px; /* Assign an insanely large width */
+  top: 70%;
+  right: 0;
+  animation: slide-animation 20s infinite;
+}
+#slider .slide {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+  0% { 
+    opacity: 0;
+    right: 0;
+  }
+  11% {
+    opacity: 1;
+    right: 0; 
+  }
+  22% { right: 100%; }
+  33% { right: 100%; }
+  44% { right: 200%; }
+  55% { right: 200%; }
+  66% { right: 300%; }
+  77% { right: 300%; }
+  88% {
+    opacity: 1;
+    right: 400%; 
+  }
+  100% {
+    opacity: 0;
+    right: 400%;
+  }
+}
+/* Akhir header */
+
+
+
+/* Style For Portfolio */
+.portfolio {
+    text-align: center;
+    margin-top: 10vh;
+    background-color: whitesmoke;
+    padding: 5vh 0;
+}
+
+.grid-container img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+.grid-container  h2 {
+    margin-bottom: .5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    background-color: rgb(182, 174, 174);
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px 23px;
+  }
+  
+  .location-image {
+    margin-right: 20px;
+  }
+
+  .location-image img {
+    border: 10px solid rgba(15, 134, 202, 0.795);
+    border-radius: 5px;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+  }
+  
+  .location-image img:hover {
+    opacity: 1;
+  }
+  
+  .location-image img:hover {
+    filter: blur(2px);
+  }
+  
+
+  .grid.box ul {
+      display: inline-block;
+      margin-left:-50%;
+  }
+
+.sub2 {
+    margin-left: 20%;
+}
+
+
+
+
+
+  footer {
+      background-color: rgb(0, 81, 128);
+      text-align: center;
+      padding: 5px;
+  }
