@@ -1,0 +1,76 @@
+Mari kita mulai dengan query-query sederhana.
+
+Tampilkan nama politician, partai dan grade_current politician tersebut yang berada di partai R dan memiliki grade_current range 9 s/d 11
+
+// Output:
+    [ { name: 'Bill Cassidy',
+        party: 'R',
+        grade_current: 9.285165569 },
+      { name: 'Dana Rohrabacher',
+        party: 'R',
+        grade_current: 10.64634133 },
+      { name: 'Frank Guinta',
+        party: 'R',
+        grade_current: 10.94131093 }
+    ]
+Hitung jumlah vote untuk politician yang bernama Olympia Snowe.
+
+// Output:
+     [ { totalVote: 4, name: 'Olympia Snowe' } ]
+Hitung jumlah vote untuk politician yang nama-nya mengandung kata Adam.
+
+// Output:
+     [ { name: 'Adam Kinzinger', totalVote: 6 },
+       { name: 'Adam Schiff', totalVote: 7 },
+       { name: 'Adam Smith', totalVote: 11 }
+     ]
+Tampilkan 3 Politician beserta nama partai dan lokasi Politician tersebut, yang memiliki suara terbanyak.
+
+// Output:
+     [ { totalVote: 51,
+         name: 'Candice Miller',
+         party: 'R',
+         location: 'WA' },
+       { totalVote: 11,
+         name: 'Adam Smith',
+         party: 'D',
+         location: 'WA' },
+       { totalVote: 11,
+         name: 'Anna Eshoo',
+         party: 'D',
+         location: 'WA' }
+     ]
+Tampilkan siapa saja yang melakukan voting ke politician yang bernama Olympia Snowe
+
+// Output:
+    [ { first_name: 'Aaliyah',
+        last_name: 'Langworth',
+        gender: 'male',
+        age: 61 },
+      { first_name: 'Prudence',
+        last_name: 'Kilback',
+        gender: 'female',
+        age: 88 },
+      { first_name: 'Ricardo',
+        last_name: 'Koss',
+        gender: 'female',
+        age: 65 },
+      { first_name: 'Zechariah',
+        last_name: 'Wolff',
+        gender: 'female',
+        age: 60 }
+   ]
+NOTE
+
+Gunakanlah library cli-table / console.table() jika kamu ingin ber-eksperimen membuat hasil query kamu berada dalam tabel.
+
+Example Output:
+╔════════════════════╤══════════╤════════════════════╗
+║ Name               │ Party    │ Grade Current      ║
+╟────────────────────┼──────────┼────────────────────╢
+║ Bill Cassidy       │ R        │ 9.285165569        ║
+╟────────────────────┼──────────┼────────────────────╢
+║ Dana Rohrabacher   │ R        │ 10.64634133        ║
+╟────────────────────┼──────────┼────────────────────╢
+║ Frank Guinta       │ R        │ 10.94131093        ║
+╚════════════════════╧══════════╧════════════════════╝
